@@ -12,7 +12,7 @@ Welcome to the repository for session code files conducted by Front-End team at 
 
 ## Workshop Details
 
-We conduct front-end workshops as part of the student activity at Minders. This repository is dedicated to providing materials and code from our sessions.
+We conduct `Front-End Workshop` as part of the student activity at Minders. This repository is dedicated to providing materials and code from our sessions.
 
 ## Folder Structure
 
