@@ -26,6 +26,6 @@ For any inquiries or further information, you can reach out to us:
 - Yassin Ali: [GitHub Profile](https://github.com/YassenAli)
 - Ahmed Saeed: [GitHub Profile](https://github.com/saeedmhmoud100)
 - Bassant Mahmoud: [GitHub Profile](#)
-- Farida Hossam: [GitHub Profile](#)
+- Farida Hossam: [GitHub Profile](https://github.com/fardiaahossaam)
 
 We hope you find the materials useful!
