@@ -1,0 +1,71 @@
+/* General reset for better compatibility */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Styling for the header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Side nav bar positioning */
+nav {
+    width: 200px;
+    position: fixed; /* Fix the navbar on the side */
+    left: 0;
+    top: 0;
+    height: 100%; /* Full height of the page */
+    background-color: #444;
+    padding-top: 50px; /* To add space between header and nav */
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 20px 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Main content positioning */
+main {
+    margin-left: 220px; /* Push the main content to the right to make room for the sidebar */
+    padding: 20px;
+}
+
+section, article, figure, footer {
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 500px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
