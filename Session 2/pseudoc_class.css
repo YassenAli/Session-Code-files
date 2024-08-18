@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+/* :empty */
+div:empty{
+   width: 200px;
+   height: 400px;
+   background-color: #2196f3;
+}
+
+
+
+
+
+/* input */
+/* input:enabled {
+    border: 2px solid #4caf50;
+}
+input:disabled {
+    background-color: #f5f5f5;
+    border: 2px solid #ddd;
+}
+input:required {
+    border: 2px solid #ff9800;
+}
+input:focus {
+    border: 2px solid blue;
+}
+input[type="checkbox"]:checked +label  {
+    font-weight: bold;
+    color: #4caf50;
+} */
+/* input:in-range {
+    background-color: #c7fbfe;
+} */
+
+
+
+
+
+
+
+/* :link and :visited */
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+a:visited {
+    color: purple;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* :hover and :active */
+button:hover {
+    background-color: #2196f3;
+    color: white;
+}
+button:active {
+    background-color: plum;
+}
+
+
+
+
+
+/* :first-child: Targets the very first child of its parent, regardless of type.
+
+:first-of-type: Targets the first element of its type among its siblings, regardless of its position in the parent. */
+
+/* :first-of-type */
+/* div > p:first-of-type {
+    font-weight: bold;
+    color: #2196f3;
+} */
+
+
+
+
+
+
+/* :first-child */
+/* div > p:first-child {
+    color: plum;
+} */
+
+
+
+
+/* :nth-child() */
+/* div > span:nth-child(2) {
+    font-weight: bold;
+    color: #ff9800;
+} */
+
