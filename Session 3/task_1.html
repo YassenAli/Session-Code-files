@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .inline {
+        background-color: red;
+        display: inline-block;
+        border: 2px solid black;
+        border-radius: 8px;
+        margin: auto;
+      }
+      .block {
+        background-color: red;
+        display: block;
+        border: 2px solid black;
+        border-radius: 8px;
+        margin: 10px auto;
+      }
+      .big {
+        width: 200px;
+        height: 200px;
+      }
+      .small {
+        width: 100px;
+        height: 100px;
+      }
+      .text {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body class="text">
+    <div class="inline small"></div>
+    <div class="inline big"></div>
+    <div class="inline small"></div>
+    <div class="inline big"></div>
+    <div class="inline small"></div>
+    <div class="inline big"></div>
+    <div class="inline small"></div>
+    <div class="inline big"></div>
+    <div class="inline small"></div>
+
+    <div class="block big"></div>
+    <div class="block small"></div>
+    <div class="block big"></div>
+    <div class="block small"></div>
+
+    <div class="inline big" style="margin: auto"></div>
+    <div class="inline big" style="margin: auto"></div>
+  </body>
+</html>
