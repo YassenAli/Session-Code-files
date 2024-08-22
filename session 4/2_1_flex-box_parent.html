@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box</title>
+
+    <style>
+
+      .container > div {
+background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    margin: 5px;
+   
+}
+.container {
+  background-color: plum;
+    display: flex;
+    width: 300px;
+    height: 200px;
+    border: 2px solid #333;
+    margin-bottom: 20px;
+}
+
+.align-items {
+   
+    flex-direction: row;
+    align-items: baseline; /* Aligns items in the center of the cross axis (vertically) */
+}
+
+.align-content {
+    
+    flex-wrap: wrap; /* Allows items to wrap into multiple lines */
+    align-content: center; /* Distributes lines with space between them */
+    height: 400px; /* Increased height to show the effect of align-content */
+}
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Align items</h1>
+    <div class="container align-items">
+      <div class="item" ><h1>1</h1></div>
+      <div class="item"><h2>2</h2></div>
+      <div class="item"><h3>3</h3></div>
+      <div class="item"><h6>4</h6></div>
+     
+  </div>
+
+  <h1>Align content</h1>
+  <div class="container align-content">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+</div>
+  
+</div>
+</body>
+</html>
