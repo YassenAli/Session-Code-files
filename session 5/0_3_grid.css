@@ -1,14 +1,13 @@
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 .parent {
-    margin: 20px auto;
     width: 800px;
     height: 500px;
     background-color: #444;
     display: grid;
-    gap: 10px;
 }
 
 .child {
