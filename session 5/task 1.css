@@ -1,0 +1,45 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* 3 columns: nav, article, aside */
+    grid-template-rows: auto 1fr auto; /* 3 rows: header, content, footer */
+    gap: 10px;
+    /* grid-template-areas:
+        "header header header"
+        "nav article aside"
+        "footer footer footer"; */
+}
+
+header {
+    grid-column: 1 / span 3; /* Spans all 3 columns */
+    background-color: lightblue;
+    padding: 20px;
+    /* grid-area: header; */
+}
+
+nav {
+    grid-column: 1; /* First column */
+    background-color: lightgreen;
+    padding: 20px;
+    /* grid-area: nav; */
+}
+
+article {
+    grid-column: 2; /* Second column */
+    background-color: lightcoral;
+    padding: 20px;
+    /* grid-area: article; */
+}
+
+aside {
+    grid-column: 3; /* Third column */
+    background-color: lightyellow;
+    padding: 20px;
+    /* grid-area: aside; */
+}
+
+footer {
+    grid-column: 1 / span 3; /* Spans all 3 columns */
+    background-color: lightgrey;
+    padding: 20px;
+    /* grid-area: footer; */
+}
