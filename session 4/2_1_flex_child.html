@@ -9,14 +9,15 @@
 
       .flex-container > div {
   background-color: #f1f1f1;
-  width: 100px;
   margin: 10px;
   height: 100px;
   text-align: center;
   line-height: 70px;
   font-size: 25px;
+  
 }
     .flex-container {
+  height: 500px;
   display: flex;
   background-color: plum;
   flex-direction: row;
@@ -34,8 +35,8 @@
     <h1>Child Properties</h1>
 
 <div class="flex-container">
-  <div style="flex-shrink: 0;">item 1</div>
-  <div >item 2</div>
+  <div >item 1</div>
+  <div style="align-self: center;">item 2</div>
   <div>item 3</div>  
   <div>item 4</div>
   

@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.page {
+    height: 100vh;
+    background-color: #f0f0f017;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: auto auto auto;
+}
+
+h2 {
+    background-color: #333;
+    color: white;
+}
+
+nav{
+    background-color: #666;
+}
+
+section {
+    background-color: #999;
+}
+
+aside {
+    background-color: #bbb;
+}
+
+footer {
+    background-color: #ccc;
+}
