@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive HTML Page with JavaScript</title>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p>This is an interactive webpage enhanced with JavaScript.</p>
+
+    <label for="name">Enter your name:</label>
+    <input type="text" id="name" placeholder="Your name">
+
+    <p id="greeting">Hello, Guest!</p>
+
+    <button onclick="greetUser()">Click Me</button>
+
+    <script>
+        function greetUser() {
+            var name = document.getElementById("name").value;
+            var greetingText = name ? "Hello, " + name + "!" : "Hello, Guest!";
+            document.getElementById("greeting").innerHTML = greetingText;
+        }
+    </script>
+</body>
+</html>
