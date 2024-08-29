@@ -2,19 +2,21 @@
 // Addition
 var x = 100,
   y = 200,
-  z = x + y; // z = 100 + 200 = 300
+  z = x + y; 
+// console.log(z);
 
 // Subtraction
 var x = 1000,
   y = 150,
-  z = x - y; // z = 1000 - 150 = 850
+  z = x - y; 
+  // console.log(z);
 
 // String And Number
 
-var x = "name",
+var x = "53",
   y = 150,
-  z = x - y; // z = "Osama" - 150 = NAN (not a number)
-// console.log(z);
+  z = x - y; // z = "53" - 150 = NAN (not a number)
+console.log(z);
 
 // Divide
 
