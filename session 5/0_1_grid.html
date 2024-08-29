@@ -9,8 +9,6 @@
             box-sizing: border-box;
         }
         /*
-            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-
         Grid
             Parent
             - display: grid
@@ -18,23 +16,25 @@
             - grid-template-rows => [Number Of rows in] => [Px, %, auto, fraction, repeat, mix]
             - row-gap:
             - column-gap:
-            - gap: (short hand L row w column gap)
+            - gap:
             - justify-content
             - align-content
             - grid-template-areas (grid-area in child)
             Child
-            - grid-row: [Grid Row Start] / [Grid Row End]
             - grid-column: [Grid Column Start] / [Grid Column End]
+            - grid-row: [Grid Row Start] / [Grid Row End]
             - grid-area: [Grid Row Start] [Grid Column Start] / [Grid Row End] [Grid Column End]
-            
         */
         .grid-container{
             margin: 20px auto;
-            width: 800px;
+            /* width: 800px; */
             height: 500px;
             background-color: #EEE;
             display: grid;
-            
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            /* gap: 10px; */
+            /* justify-content: space-between;
+            align-content: space-between; */
         }
 
         .grid-item{
