@@ -11,17 +11,12 @@
 //     // code block to be executed after try and catch blocks
 // }
 // Example:
-const y = 5;
 // y=4;
 
 try {
-    const x = 5;
-    if (x === 5) {
-        const y = 5;
-        console.log(y)
-    }
+    const y = 5;
 } catch (error) {
-    console.log('An error occurred')
+    console.log(error)
 } finally {
     console.log('Finally block')
 }

@@ -1,4 +1,4 @@
-
+// Date: 2021/09/02
 
 // array
 // array is a collection of elements that can be of different types
@@ -20,6 +20,10 @@ let names = new Array();
 console.log(names); // []
 let animals = [];
 console.log(animals); // []
+
+for (let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i]);
+}
 
 // accessing array elements
 // array elements are accessed using their index

@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>innerHTML Example</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1 id="output">Hello, World!</h1>
     <button onclick="changeText()">Click Me</button>
-    
+
     <script>
-        function changeText() {
-            document.getElementById("output").innerHTML = "Hello, JavaScript!";
-        }
+      function changeText() {
+        document.getElementById(
+          "output"
+        ).innerHTML = `Hello, JavaScript!</h2>`;
+      }
     </script>
-</body>
+  </body>
 </html>
