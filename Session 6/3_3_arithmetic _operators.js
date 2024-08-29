@@ -13,7 +13,7 @@ var x = 1000,
 
 // String And Number
 
-var x = "66",
+var x = "53",
   y = 150,
   z = x - y; // z = "53" - 150 = NAN (not a number)
 console.log(z);
