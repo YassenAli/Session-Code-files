@@ -5,11 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>grid</title>
     <link rel="stylesheet" href="0_2_grid.css">
+    <style>
+        .page {
+            height: 100vh;
+            background-color: #f0f0f017;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: 60px auto 60px;
+            grid-template-areas: "logo logo nav nav nav nav nav nav nav nav"
+                        "cont cont cont cont cont cont cont side side side"
+                        "footer footer footer footer footer footer footer footer footer footer";
+        }
+        .logo {
+            background-color: lightblue;
+            color: white;
+            grid-area: logo;
+        }
+
+        nav{
+            background-color: lightgreen;
+            grid-area: nav;
+        }
+
+        section {
+            background-color: lightcoral;
+            grid-area: cont;
+        }
+
+        aside {
+            background-color: lightyellow;
+            grid-area: side;
+        }
+
+        footer {
+            background-color: lightgrey;
+            grid-area: footer;
+        }
+    </style>
 </head>
 <body>
-    <h2 class="logo">Name</h2>
-    <div class="page"></div>
-    <nav>
+    <div class="page">
+        <h2 class="logo">Name</h2>
+        <nav>
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -19,5 +56,6 @@
     <section>Content</section>
     <aside>Sidebar</aside>
     <footer>Footer</footer>
+</div>
 </body>
 </html>

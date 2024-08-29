@@ -4,14 +4,17 @@
 }
 
 .parent {
+    margin: 20px auto;
     width: 800px;
     height: 500px;
-    background-color: #444;
+    background-color: lightgray;
     display: grid;
+    grid-template-columns: repeat(7, auto);
+    gap: 10px;
 }
 
 .child {
-    background-color: #999;
+    background-color: lightcoral;
     padding: 20px;
     font-size: 30px;
     font-weight: bold;
