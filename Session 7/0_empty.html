@@ -10,9 +10,14 @@
 
 
 <script>
-    document.onclick = function () {
-        alert('document clicked');
-    };
+    const myDiv = document.getElementById('myDiv')
+    myDiv.classList // returns a list of all classes
+    myDiv.classList.add('myClass') // adds a class
+    myDiv.classList.remove('myClass') // removes a class
+    myDiv.classList.toggle('myClass') // toggles a class
+    myDiv.classList.contains('myClass') // returns true if the class exists
+    myDiv.classList.replace('oldClass', 'newClass') // replaces a class
+
 </script>
 </body>
 </html>
