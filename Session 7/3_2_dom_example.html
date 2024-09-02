@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draggable Grid</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 30%);
+            grid-template-rows: repeat(3, 30vh);
+            gap: 5px;
+            width: 90%;
+            margin: 0 auto;
+        }
+        .box {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .empty {
+            background-color: #eee;
+        }
+
+        .child{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .tomato {
+            background-color: tomato;
+        }
+        .skyblue {
+            background-color: skyblue;
+        }
+        .lightgreen {
+            background-color: lightgreen;
+        }
+        .gray {
+            background-color: gray;
+        }
+        .lightcoral {
+            background-color: lightcoral;
+        }
+        .aquamarine {
+            background-color: aquamarine;
+        }
+        .lightyellow {
+            background-color: lightyellow;
+        }
+        .aqua{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+<div class="grid">
+    <div class="box">
+        <div class="child tomato">1</div>
+    </div>
+    <div class="box">
+        <div class="child skyblue">2</div>
+    </div>
+    <div class="box">
+        <div class="child lightgreen">3</div>
+    </div>
+
+    <div class="box">
+        <div class="child gray">4</div>
+    </div>
+    <div class="box">
+        <div class="child lightcoral">5</div>
+    </div>
+    <div class="box">
+        <div class="child aquamarine">6</div>
+    </div>
+
+    <div class="box">
+        <div class="child lightyellow">7</div>
+    </div>
+    <div class="box">
+        <div class="child aqua">8</div>
+    </div>
+    <div class="box empty"></div>
+</div>
+
+<script>
+    const boxes = document.querySelectorAll('.box');
+    let emptyBox = document.querySelector('.empty');
+
+    function addEventListeners() {
+        boxes.forEach(box => {
+            const child = box.querySelector('.child');
+            if (child) {
+                child.draggable = true;
+                child.addEventListener('dragstart', handleDragStart);
+            }
+            box.addEventListener('dragover', handleDragOver);
+            box.addEventListener('drop', handleDrop);
+        });
+    }
+    addEventListeners();
+    function handleDragStart(e) {
+        e.dataTransfer.setData('text/plain', e.target.parentNode.innerHTML);
+        e.dataTransfer.effectAllowed = 'move';
+    }
+
+    function handleDragOver(e) {
+        e.preventDefault();
+        e.dataTransfer.dropEffect = 'move';
+    }
+
+    function handleDrop(e) {
+        e.preventDefault();
+        const draggedHTML = e.dataTransfer.getData('text/plain');
+        if (e.target.classList.contains('empty')) {
+            const draggedBox = Array.from(boxes).find(box => box.innerHTML.trim() === draggedHTML.trim());
+            if (draggedBox) {
+                emptyBox.classList.remove('empty');
+                emptyBox.innerHTML = draggedHTML;
+                draggedBox.classList.add('empty');
+                draggedBox.innerHTML = '';
+                emptyBox = draggedBox;
+                addEventListeners();
+            }
+        }
+    }
+</script>
+</body>
+</html>
