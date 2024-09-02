@@ -1,12 +1,12 @@
-setTimeout(function() {
-    console.log("This is an anonymous function!");
-}, 1000);
+// setTimeout(function() {
+//     console.log("This is an anonymous function!");
+// }, 500);
 
 
 
-document.getElementById("myButton").addEventListener("click", function() {
-    alert("Button clicked!");
-});
+// document.getElementById("myButton").addEventListener("click", function() {
+//     alert("Button clicked!");
+// });
 
 
 
@@ -14,5 +14,5 @@ document.getElementById("myButton").addEventListener("click", function() {
 // let doubled = numbers.map(function(num) {
 //     return num * 2;
 // });
-//
+
 // console.log(doubled);

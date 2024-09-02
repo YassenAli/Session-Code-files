@@ -10,7 +10,7 @@
   - getSeconds()
 */
 
-let dateNow = new Date();
+// let dateNow = new Date();
 
 
-console.log(dateNow);
+// console.log(dateNow.getSeconds());
