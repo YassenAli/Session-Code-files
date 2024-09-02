@@ -14,7 +14,6 @@
 */
 
 let dateNow = new Date();
-
 console.log(dateNow);
 
 console.log(Date.now()); // 1000 Mill = 1 Second

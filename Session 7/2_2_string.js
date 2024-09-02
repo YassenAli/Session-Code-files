@@ -1,27 +1,44 @@
-/*
+
+
+// object example
+
+let person = {
+  firstName: "Bassant",
+  lastName: "Mahmoud",
+  age: 30,
+  isEmployed: true,
+  
+  // Method to get full name
+  getFullName() {
+      return "full Name:" + person.firstName + " " + person.lastName;
+  }
+}
+// console.log(person.getFullName())
+
+
+
+
+  /*
   String Methods
-  - Access With Index
+  - Access With Index[]
   - Access With charAt()
   - length
   - trim()
   - toUpperCase()
   - toLowerCase()
+  - concat("   ")
   - Chain Methods
+  
 */
+ 
 
-let theName = "  Ahmed  ";
+let theName = " bassant ";
 
-console.log(theName);
-console.log(theName[1]);
-console.log(theName[5]);
+let thename = new String("bassant") ;
 
-console.log(theName.charAt(1));
-console.log(theName.charAt(5));
 
-console.log(theName.length);
-console.log(theName.trim());
 
-console.log(theName.toUpperCase());
-console.log(theName.toLowerCase());
+// console.log(thename)
 
-console.log(theName.trim().charAt(2).toUpperCase());
+//console.log(thename) // chain method , output: N
+
