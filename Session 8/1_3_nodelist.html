@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Static NodeList Example</title>
+</head>
+<body>
+    <div class="my-class">Element 1</div>
+    <div class="my-class">Element 2</div>
+    <button id="add-element">Add New Element</button>
+
+    <script>
+        // Select elements with the class 'my-class'
+        const elements = document.querySelectorAll('.my-class');
+        console.log('Initial count:', elements.length);  // Output: 2
+
+        // Function to add a new element with class 'my-class'
+        document.getElementById('add-element').addEventListener('click', () => {
+            const newElement = document.createElement('div');
+            newElement.className = 'my-class';
+            newElement.textContent = 'New Element';
+            document.body.appendChild(newElement);
+
+            // Check the count of elements with class 'my-class'
+            console.log('Count after adding new element:', elements.length);  // Still Output: 2
+        });
+    </script>
+</body>
+</html>

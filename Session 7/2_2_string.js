@@ -32,13 +32,12 @@ let person = {
 */
  
 
-let theName = " bassant ";
 
-let thename = new String("bassant") ;
-
+let thename = new String(" Bassant") ;
 
 
-// console.log(thename)
 
-//console.log(thename) // chain method , output: N
+console.log(thename.concat(" Mahmoud"))
+
+console.log(thename.trim().charAt(5).toUpperCase())  //chain method , output: N
 

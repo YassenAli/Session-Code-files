@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="icon" href="images.png" type="image/png">
+</head>
+<body>
+
+
+<div id="my-div">
+    <span class="one">One</span>
+    <!-- commentttt -->
+    <span class="two">Two</span>
+    <!-- commenttt -->
+    <span class="three">Three</span>
+</div>
+
+
+
+<script>
+    /*
+  DOM [Traversing]
+  - nextSibling
+  - previousSibling
+  - nextElementSibling
+  - previousElementSibling
+  - children
+  - firstchild
+  - lastchild
+  - parentElement
+*/
+
+let span = document.querySelector(".two");
+
+console.log(span.previousElementSibling);
+
+span.onclick = function () {
+  span.parentElement.remove();
+}
+</script>
+</body>
+</html>

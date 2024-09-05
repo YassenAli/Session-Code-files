@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .parent {
+            width: 500px;
+            height: 500px;
+            background-color: #eee;
+            border: 1px solid #000;
+            position: relative;
+        }
+
+        .child {
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            cursor: pointer;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div id="parent" class="parent">
+        <div id="child" class="child"></div>
+    </div>
+</div>
+
+<script>
+    const parent = document.getElementById('parent');
+    const child = document.getElementById('child');
+    const myEvent = e=>{
+            const rect = parent.getBoundingClientRect();
+            const x = e.clientX - rect.left - child.offsetWidth / 2;
+            const y = e.clientY - rect.top - child.offsetHeight / 2;
+
+            const minX = 0;
+            const minY = 0;
+            const maxX = rect.width - child.offsetWidth;
+            const maxY = rect.height - child.offsetHeight;
+
+            child.style.left = Math.max(minX, Math.min(maxX, x)) + 'px';
+            child.style.top = Math.max(minY, Math.min(maxY, y)) + 'px';
+    }
+
+    let isMouseDown = false;
+    document.addEventListener('click',_=>{
+        if(isMouseDown) {
+            isMouseDown = false;
+            document.removeEventListener('mousemove',myEvent)
+        } else {
+            isMouseDown = true;
+            document.addEventListener('mousemove',myEvent)
+        }
+    });
+</script>
+
+</body>
+</html>

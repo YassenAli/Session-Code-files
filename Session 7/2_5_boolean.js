@@ -3,10 +3,10 @@
 // valueOf(): Retrieves the primitive Boolean value from a Boolean object.
 
 
-let value = Boolean(0);
-console.log(Boolean(value)); 
+let value = new Boolean(2);
+// console.log(Boolean(value)); 
 
 let valuee = true;
-console.log(valuee.toString()); 
+// console.log(valuee); 
 
-console.log(valuee.valueOf()); 
+console.log(value.valueOf()); 
