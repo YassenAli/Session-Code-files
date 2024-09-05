@@ -18,6 +18,27 @@
 </div>
 
 
-    <script src="1_2_traversing_elements.js"></script>
+
+<script>
+    /*
+  DOM [Traversing]
+  - nextSibling
+  - previousSibling
+  - nextElementSibling
+  - previousElementSibling
+  - children
+  - firstchild
+  - lastchild
+  - parentElement
+*/
+
+let span = document.querySelector(".two");
+
+console.log(span.previousElementSibling);
+
+span.onclick = function () {
+  span.parentElement.remove();
+}
+</script>
 </body>
 </html>

@@ -13,17 +13,18 @@
 
 let myIdElement = document.getElementById("my-div");
 let myTagElements = document.getElementsByTagName("p");
-let myClassElement = document.getElementsByClassName("my-span");
-let myQueryElement = document.querySelector(".my-span");
-let myQueryAllElement = document.querySelectorAll(".my-span");
+// let myClassElement = ;
+// let myQueryElement = ;
+// let myQueryAllElement = ;
 
 console.log(myIdElement);
-console.log(myTagElements[2]);
-console.log(myClassElement);
-console.log(myQueryElement[2]);
-console.log(myQueryAllElement);
+console.log(myTagElements);
+// console.log(myClassElement);
+// console.log(myQueryElement[2]);
+// console.log(myQueryAllElement);
 
 
-
-
-console.log(document.title);
+// console.log(document.title);
+// console.log(document.body);
+// console.log(document.forms[1].two.value)
+// console.log(document.links[1].href)
