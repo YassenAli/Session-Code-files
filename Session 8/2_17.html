@@ -1,0 +1,27 @@
+<!--
+let result = element.hasAttribute(name);
+
+The hasAttribute() returns true if the element contains the specified attribute or false otherwise.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS hasAttribute() Demo</title>
+</head>
+<body>
+
+    <button id="btnSend" disabled>Send</button>
+
+    <script>
+        let btn = document.querySelector('#btnSend');
+        if (btn) {
+            let disabled = btn.hasAttribute('disabled');
+            console.log(disabled);
+        }
+    </script>
+</body>
+</html>

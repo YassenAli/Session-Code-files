@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS getAttribute() Demo</title>
+</head>
+<!--
+let value = element.getAttribute(name);
+
+Parameters
+The getAttribute() accepts an argument which is the name of the attribute from which you want to return the value.
+
+Return value
+If the attribute exists on the element, the getAttribute() returns a string that represents the value of the attribute. In case the attribute does not exist, the getAttribute() returns null or "".
+
+-->
+<body>
+
+    <a href="https://www.javascripttutorial.net" id="js" target="_blank" rel="noopener">JavaScript Tutorial</a>
+
+    <script>
+        let link = document.querySelector('#js');
+        if (link) {
+            let target = link.getAttribute('target');
+            console.log(target);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JavaScript DOM: Replace Elements</title>
+</head>
+<body>
+    <!--
+    parentNode.replaceChild(newChild, oldChild);
+
+    In this method, the newChild is the new node to replace the oldChild node which is the old child node to be replaced.
+    
+    -->
+    <ul id="menu">
+        <li>Homepage</li>
+        <li>Services</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+    <script>
+        let menu = document.getElementById('menu');
+        
+        // create a new node
+        let li = document.createElement('li');
+        li.textContent = 'Home';
+
+        // replace the first list item
+        menu.replaceChild(li, menu.firstElementChild);
+    </script>
+</body>
+</html>

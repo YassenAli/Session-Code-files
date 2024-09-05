@@ -1,0 +1,119 @@
+<!--
+
+element.style
+The style property returns the read-only CSSStyleDeclaration object that contains a list of CSS properties. For example, to set the color of an element to red, you use the following code:
+
+element.style.color = 'red';
+If the CSS property contains hyphens (-) for example -webkit-text-stroke you can use the array-like notation ([]) to access the property:
+
+element.style.['-webkit-text-stock'] = 'unset';
+Code language: JavaScript (javascript)
+The following table shows the common CSS properties:
+
+CSS	JavaScript
+background	background
+background-attachment	backgroundAttachment
+background-color	backgroundColor
+background-image	backgroundImage
+background-position	backgroundPosition
+background-repeat	backgroundRepeat
+border	border
+border-bottom	borderBottom
+border-bottom-color	borderBottomColor
+border-bottom-style	borderBottomStyle
+border-bottom-width	borderBottomWidth
+border-color	borderColor
+border-left	borderLeft
+border-left-color	borderLeftColor
+border-left-style	borderLeftStyle
+border-left-width	borderLeftWidth
+border-right	borderRight
+border-right-color	borderRightColor
+border-right-style	borderRightStyle
+border-right-width	borderRightWidth
+border-style	borderStyle
+border-top	borderTop
+border-top-color	borderTopColor
+border-top-style	borderTopStyle
+border-top-width	borderTopWidth
+border-width	borderWidth
+clear	clear
+clip	clip
+color	color
+cursor	cursor
+display	display
+filter	filter
+float	cssFloat
+font	font
+font-family	fontFamily
+font-size	fontSize
+font-variant	fontVariant
+font-weight	fontWeight
+height	height
+left	left
+letter-spacing	letterSpacing
+line-height	lineHeight
+list-style	listStyle
+list-style-image	listStyleImage
+list-style-position	listStylePosition
+list-style-type	listStyleType
+margin	margin
+margin-bottom	marginBottom
+margin-left	marginLeft
+margin-right	marginRight
+margin-top	marginTop
+overflow	overflow
+padding	padding
+padding-bottom	paddingBottom
+padding-left	paddingLeft
+padding-right	paddingRight
+padding-top	paddingTop
+page-break-after	pageBreakAfter
+page-break-before	pageBreakBefore
+position	position
+stroke-dasharray	strokeDasharray
+stroke-dashoffset	strokeDashoffset
+stroke-width	strokeWidth
+text-align	textAlign
+text-decoration	textDecoration
+text-indent	textIndent
+text-transform	textTransform
+top	top
+vertical-align	verticalAlign
+visibility	visibility
+width	width
+z-index	zIndex
+
+To completely override the existing inline style, you set the cssText property of the style object. For example:
+
+element.style.cssText = 'color:red;background-color:yellow';
+Code language: JavaScript (javascript)
+Or you can use the setAttribute() method:
+
+element.setAttribute('style','color:red;background-color:yellow');
+Code language: JavaScript (javascript)
+
+
+If you do not want to overwrite the existing CSS properties completely, you can concatenate the new CSS property to the cssText as follows:
+
+element.style.cssText += 'color:red;background-color:yellow';
+Code language: JavaScript (javascript)
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Style Demo</title>
+</head>
+<body>
+    <p id="content">JavaScript Setting Style Demo!</p>
+    <script>
+        let p = document.querySelector('#content');
+        p.style.color = 'red';
+        p.style.fontWeight = 'bold';
+    </script>
+</body>
+</html>

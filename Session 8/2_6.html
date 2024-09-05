@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM - append()</title>
+</head>
+<body>
+    <!--
+    The parentNode.append() method inserts a set of Node objects or DOMString objects after the last child of a parent node:
+    
+    Differences	append()	appendChild()
+    Return value	undefined	The appended Node object
+    Input	Multiple Node Objects	A single Node object
+    Parameter Types	Accept Node and DOMString objects	Accept only Node objects
+
+    domstring like: 'text', 'html', 'element'
+
+    document.createElement("div"); // "div" is a DOMString
+    element.textContent = "Hello World";
+    When working with attributes in the DOM, both the attribute names and values are DOMString objects.
+
+    -->
+    <ul id="app">
+        <li>JavaScript</li>
+    </ul>
+
+    <script>
+        let app = document.querySelector('#app');
+
+        let langs = ['TypeScript','HTML','CSS'];
+
+        let nodes = langs.map(lang => {
+            let li = document.createElement('li');
+            li.textContent = lang;
+            return li;
+        });
+
+        app.append(...nodes);
+    </script>
+</body>
+</html>

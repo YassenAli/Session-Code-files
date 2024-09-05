@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript cloneNode() Demo</title>
+</head>
+<body>
+    <!--
+
+    let clonedNode = originalNode.cloneNode(deep);
+    Pamaraters
+    deep
+    The cloneNode() method accepts an optional parameter deep:
+
+    If the deep is true, then the original node and all of its descendants are cloned.
+    If the deep is false, only the original node will be cloned. All the node’s descendants will not be cloned.
+    The deep parameter defaults to false if you omit it.
+
+    originalNode
+    The originalNode is the element to be cloned.
+
+    Return value
+    The cloneNode() returns a copy of the originalNode.
+    -->
+    <ul id="menu">
+        <li>Home</li>
+        <li>Services</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+    <script>
+        let menu = document.querySelector('#menu');
+        let clonedMenu = menu.cloneNode(true);
+        clonedMenu.id = 'menu-mobile';
+        document.body.appendChild(clonedMenu);
+    </script>
+</body>
+</html>

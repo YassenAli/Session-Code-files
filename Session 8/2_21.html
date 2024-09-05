@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Name</title>
+</head>
+<!--
+The className property returns a space-separated list of classes of an element as a string.
+
+If the class list of an element contains a specified class name, the toggle() method removes it. If the class list doesn’t contain the class name, the toggle() method adds it to the class list.
+
+The element’s classList property returns the live collection of CSS classes of the element.
+Use the add() and remove() methods to add CSS classes to and remove CSS classes from the class list of an element.
+Use the replace() method to replace an existing class with a new one.
+Use the contains() method to check if the class list of an element contains a specified class.
+Use the toggle() method to toggle a class.
+-->
+<body>
+    <ul id="menu" class="vertical main">
+        <li>Homepage</li>
+        <li>Services</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+
+    <script>
+        let menu = document.querySelector('#menu');
+        menu.className += ' new';
+        menu.classList.add('new2');
+        menu.classList.add('info','visible','block');
+        menu.classList.remove('visible');
+        menu.classList.replace('info','warning');
+        menu.classList.contains('warning');
+        menu.classList.toggle('visible');
+        console.log(menu.className);
+    </script>
+</body>
+</html>

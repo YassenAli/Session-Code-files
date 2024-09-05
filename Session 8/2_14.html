@@ -1,0 +1,54 @@
+<!--
+
+element.getAttribute(name) – get the attribute value
+element.setAttribute(name, value) – set the value for the attribute
+element.hasAttribute(name) – check for the existence of an attribute
+element.removeAttribute(name) – remove the attribute
+
+
+Summary
+
+Attributes are specified in HTML elements.
+Properties are specified DOM objects.
+Attributes are converted to properties respectively.
+Use the element.attributes property to access standard and custom attributes of an element.
+Use the element.dataset property to access the data-* attributes.
+
+
+
+setAttribute:
+
+element.setAttribute(name, value);
+Code language: CSS (css)
+Parameters
+The name specifies the attribute name whose value is set. It’s automatically converted to lowercase if you call the setAttribute() on an HTML element.
+
+The value specifies the value to assign to the attribute. It’s automatically converted to a string if you pass a non-string value to the method.
+
+Return value
+The setAttribute() returns undefined.
+
+If the attribute already exists, the setAttribute() method updates the value of the attribute. Otherwise, it creates a new attribute with the specified name and value.
+
+Note that the disabled attribute is special because it is a Boolean attribute. If a Boolean attribute is present, whatever value it has, the value is considered to be true. To set the value of a Boolean attribute to false, you need to remove the entire attribute using the removeAttribute() method.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS setAttribute() Demo</title>
+</head>
+<body>
+    <button id="btnSend">Send</button>
+
+    <script>
+        let btnSend = document.querySelector('#btnSend');
+        if (btnSend) {
+            btnSend.setAttribute('name', 'send');
+            btnSend.setAttribute('disabled', '');
+        }
+    </script>
+</body>
+</html>

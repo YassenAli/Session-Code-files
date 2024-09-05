@@ -9,13 +9,13 @@ console.log("Outside function:", a);
 
 
 
-// function changeObject(obj) {
-//     obj.name = "Changed Name";
-// }
-//
-// let person = { name: "Original Name" };
-// changeObject(person);
-// console.log(person.name);
+function changeObject(obj) {
+    obj.name = "Changed Name";
+}
+
+let person = { name: "Original Name" };
+changeObject(person);
+console.log(person.name);
 
 
 // function changePrimitive(wrapper) {

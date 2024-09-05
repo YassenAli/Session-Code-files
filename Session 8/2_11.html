@@ -1,0 +1,34 @@
+<!--
+    let childNode = parentNode.removeChild(childNode);
+
+    The childNode is the child node of the parentNode that you want to remove. If the childNode is not the child node of the parentNode, the method throws an exception.
+
+    The removeChild() returns the removed child node from the DOM tree but keeps it in the memory, which can be used later.
+
+    If you don’t want to keep the removed child node in the memory, you use the following syntax:
+
+    parentNode.removeChild(childNode);
+    Code language: JavaScript (javascript)
+    The child node will be in the memory until the JavaScript garbage collector destroys it.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JavaScript removeChild()</title>
+</head>
+<body>
+    <ul id="menu">
+        <li>Home</li>
+        <li>Products</li>
+        <li>About Us</li>
+    </ul>
+    <script>
+        let menu = document.getElementById('menu');
+        menu.removeChild(menu.lastElementChild);
+    </script>
+</body>
+</html>
